@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName HelloWorld
- * @Description TODO
+ * @Description 测试类，使用ini文件作为realm
  * @Author yaosiyuan
  * @Date 2019/4/18 21:29
  * @Version 1.0
