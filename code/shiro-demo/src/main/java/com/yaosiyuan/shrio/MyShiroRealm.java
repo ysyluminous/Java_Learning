@@ -31,6 +31,10 @@ public class MyShiroRealm implements Realm {
             throw  new IncorrectCredentialsException("密码错误");
         }
 
+
+        if (1==1){
+            throw new LockedAccountException("账号被锁定");
+        }
         return new SimpleAuthenticationInfo(username,password,getName());
 
 
