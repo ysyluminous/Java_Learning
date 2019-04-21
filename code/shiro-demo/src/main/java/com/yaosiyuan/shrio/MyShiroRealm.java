@@ -1,8 +1,10 @@
+package com.yaosiyuan.shrio;
+
 import org.apache.shiro.authc.*;
 import org.apache.shiro.realm.Realm;
 
 /**
- * @ClassName MyShiroRealm
+ * @ClassName com.yaosiyuan.shrio.MyShiroRealm
  * @Description 自定义用户账号密码，不在通过ini文件
  * @Author yaosiyuan
  * @Date 2019/4/21 15:06
