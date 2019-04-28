@@ -11,21 +11,21 @@ import org.apache.shiro.realm.Realm;
  * @Version 1.0
  **/
 public class MyShiroRealm implements Realm {
-    public String getName() {
-        return "myRealm";
-    }
+                public String getName() {
+                    return "myRealm";
+                }
 
-    public boolean supports(AuthenticationToken authenticationToken) {
-        return authenticationToken instanceof UsernamePasswordToken;
-    }
+                public boolean supports(AuthenticationToken authenticationToken) {
+                    return authenticationToken instanceof UsernamePasswordToken;
+                }
 
-    public AuthenticationInfo getAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) authenticationToken;
-        String username = usernamePasswordToken.getUsername();
-        String password = new String(usernamePasswordToken.getPassword());
+                public AuthenticationInfo getAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+                    UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) authenticationToken;
+                    String username = usernamePasswordToken.getUsername();
+                    String password = new String(usernamePasswordToken.getPassword());
 
-        if (!"tom".equals(username)){
-            throw new UnknownAccountException("找不到该用户");
+                    if (!"tom".equals(username)){
+                        throw new UnknownAccountException("找不到该用户");
         }
         if (!"0000".equals(password)){
             throw  new IncorrectCredentialsException("密码错误");
