@@ -25,10 +25,11 @@ public class ConsumerTest {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				new String[] { "application-context-consumer.xml" });
 		context.start();
-		SayHelloService sayHello = (SayHelloService) context.getBean("sayHello");
+		SayHelloService sayHello = (SayHelloService) context.getBean("sayHello1");
 
-		sayHello.sayHello("YaoSiyuan");
+		String hello = sayHello.sayHello("YaoSiyuan");
 		// press any key to exit
+		System.out.println(hello);
 		System.in.read();
 	}
 
