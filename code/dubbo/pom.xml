@@ -4,10 +4,15 @@
   <artifactId>dubbotest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
    <dependencies>
-  	<dependency>
+  <!-- 	<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
 			<version>2.5.7</version>			
+		</dependency> -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.8.4</version>			
 		</dependency>
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
